@@ -1,8 +1,175 @@
 /* CUSTOM-PROPS */
 :root {
-  --color-name: #000;
-  --color-name: #000;
-  --color-name: #000;
+  --orange: #FF9143;
+  --black-1: #0B0A0F;
+  --black-2: #212936;
+  --black-3: #394150;
+  --black-4: #4D5461;
+  --black-5: #4D5461;
+  --grey-1: #9EA3AE;
+  --grey-2: #D3D5DA;
+  --grey-3: #E5E6EB;
+  --grey-4: #F4F4F6;
+  --grey-5: #F9FAFB;
+  --dark-black: #1A1A1A;
+  --light-black: #262A2C;
+  --grey: #696969;
+  --text-color: #A8A8A8;
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Medium.woff2") format("woff2"),
+      url("../fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Regular.woff2") format("woff2"),
+      url("../fonts/Outfit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+      url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"),
+      url("../fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2"),
+      url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2"),
+      url("../fonts/PlusJakartaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-SemiBold.woff2") format("woff2"),
+      url("../fonts/Outfit-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-ExtraBold.woff2") format("woff2"),
+      url("../fonts/Rubik-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist-Bold.woff2") format("woff2"),
+      url("../fonts/Urbanist-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist-Regular.woff2") format("woff2"),
+      url("../fonts/Urbanist-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist-ExtraBold.woff2") format("woff2"),
+      url("../fonts/Urbanist-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+      url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-SemiBold.woff2") format("woff2"),
+      url("../fonts/Rubik-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("../fonts/Syne-Bold.woff2") format("woff2"),
+      url("../fonts/Syne-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
+      url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("../fonts/Syne-ExtraBold.woff2") format("woff2"),
+      url("../fonts/Syne-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist-Medium.woff2") format("woff2"),
+      url("../fonts/Urbanist-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -25,11 +192,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Rubik", "Poppins", "Arial", sans-serif;
+  font-size: 18px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--dark-black);
+  color: var(--text-color);
 }
 
 img {
@@ -79,7 +246,7 @@ select:-webkit-autofill:focus {
 /* CONTAINER  */
 .container {
   width: 100%;
-  max-width: 1064px;
+  max-width: 1194px;
   padding-left: 24px;
   padding-right: 24px;
   margin-left: auto;
