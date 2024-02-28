@@ -412,9 +412,11 @@ img {
 
 /* HERO */
 .hero {
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-image: url("../img/Vector.png");
   background-repeat: no-repeat;
-  background-position: 0  -75px;
+  background-position: -322px  8px;
 }
 
 .hero__container {
