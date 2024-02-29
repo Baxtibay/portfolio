@@ -258,13 +258,18 @@ img {
   background-color: var(--black-50);
 }
 
-.button--orange {
+.button-orange {
   background-color: var(--orange);
   border-color: var(--orange);
   color: #fff;
 }
 
-.button--outline-orange {
+.button-orange:hover {
+  color: #fff;
+  background-color: var(--black-50);
+}
+
+.button-outline-orange {
   background-color: transparent;
   border-color: var(--orange);
   color: #fff;
@@ -409,6 +414,11 @@ img {
   background-size: contain;
 }
 
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
 
 /* HERO */
 .hero {
@@ -450,8 +460,143 @@ img {
 }
 
 
-/* MEDIA */
+/* PROJECTS-SECTION */
+.project {
+  margin: 0;
+  padding-top: 200px;
+  padding-bottom: 166px;
+  background-image: url("../img/small-vector.png");
+  background-repeat: no-repeat;
+  background-position: 400px -70px;
+}
 
+.project__about {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.project__card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project__heading {
+  margin-top: 0;
+  margin-bottom: 54px;
+  font-family: syne;
+  font-size: 44px;
+  color: #fff;
+}
+
+.project__card {
+  width: 540px;
+  margin-right: 28px;
+  margin-bottom: 94px;
+}
+
+.project__card:nth-child(even) {
+  margin-right: 0;
+}
+
+.project__card-img {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+.project__card-heading {
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  color: #fff;
+}
+
+.project__card-definition-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.project__card-definition-title {
+  margin-right: 16px;
+  font-size: 14px;
+  color: var(--text-color);
+  letter-spacing: 0.25px;
+  font-weight: 700;
+}
+
+.project__card-definition-description {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.project__card-link {
+  color: var(--text-color);
+}
+
+.project__card-link:hover {
+  color: var(--orange);
+}
+
+.project__card-link:active {
+  opacity: 0.6;
+}
+
+.project__card-link-inner {
+  display: inline-flex;
+  align-items: center;
+}
+
+.project__card-link-icon {
+  margin-right: 8px;
+}
+
+.project__card-link-text {
+  font-size: 14px;
+}
+
+
+/* MEDIA */
+@media only screen and (min-width: 1200px) {
+  .hero {
+    background-position: -154px -18px;
+  }
+
+  .project {
+    background-position: 746px -43px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* PROJECTS-SECTION */
+  .project {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+
+
+  .project__about {
+    margin-bottom: 60px;
+  }
+
+  .project__heading {
+    margin-bottom: 40px;
+  }
+
+  .project__card {
+    width: 46%;
+  }
+
+  .project__card {
+    margin-right: 4%;
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   .hero__img {
@@ -459,6 +604,22 @@ img {
     height: 450px;
   }
 
+  .project__about {
+    margin-bottom: 52px;
+  };
+
+  .project__heading {
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+
+  .project__card-img {
+    margin-bottom: 26px;
+  }
+
+  .project__card-heading {
+    margin-bottom: 26px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -481,12 +642,28 @@ img {
 }
 
 @media only screen and (max-width: 830px) {
+  .hero {
+    background-position: -324px -40px
+  }
   .hero__heading {
     font-size: 32px;
+  }
+
+  .project {
+    background-position: 196px -63px;
+  }
+
+  .project__heading {
+    font-size: 36px;
   }
 }
 
 @media only screen and (max-width: 750px) {
+  .site-header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
   .main-link {
     padding: 12px 26px;
     font-size: 15px;
@@ -514,7 +691,8 @@ img {
 
   .navbar__list {
     flex-direction: column;
-    padding-left: 20px;
+    align-items: start;
+    padding-left: 44%;
     padding-right: 20px;
     margin-bottom: 20px;
   }
@@ -533,6 +711,10 @@ img {
   }
 
   /* HERO */
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
   .hero__container {
     flex-direction: column-reverse;
   }
@@ -550,9 +732,90 @@ img {
     width: 280px;
     height: 325px;
   }
+
+  /* PROJECTS-SECTION */
+  .project {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .project__heading {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  .project__card {
+    margin: 0;
+    margin-bottom: 34px;
+    width: 90%;
+  }
+
+  .project__card-img {
+    margin-bottom: 18px;
+  }
+
+  .project__card-heading {
+    margin-bottom: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar__list {
+    padding-left: 40%;
+  }
+  .project {
+    background-position: 66px -74px;
+  }
+  .project__about {
+    margin-bottom: 38px;
+  }
+
+  .project__heading {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .project__card-heading {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .site-header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .hero {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-position: -405px -84px;
+  }
+
+  .menu-btn__burger-img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .close-button-img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .project {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .project__card {
+    width: 100%;
+  }
+
   .main-link {
     padding: 8px 25px;
     font-size: 14px;
@@ -571,9 +834,43 @@ img {
     width: 220px;
     height: 258px;
   }
+
+  .project__heading {
+    font-family: "Outfit";
+  }
 }
 
+@media only screen and (max-width: 430px) {
 
+  .navbar__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .navbar__link {
+    font-size: 12px;
+  }
+  .main-link {
+    font-family: "Outfit";
+    padding: 5px 18px;
+    font-size: 10px;
+  }
+
+  .project__card-heading {
+    font-size: 14px;
+  }
+
+  .project__card-definition-list {
+    margin-bottom: 4px;
+  }
+
+  .project__card-definition-title {
+    font-size: 12px;
+  }
+
+  .project__card-definition-description {
+    font-size: 12px;
+  }
+
+}
 /* AUTOFILL-SYLES */
 /* input:-webkit-autofill,
 input:-webkit-autofill:hover,
