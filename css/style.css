@@ -562,6 +562,36 @@ img {
 }
 
 
+/* SERTIFICATIONS */
+.sertifications {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.sertifications__heading {
+  /* text-align: start; */
+  margin-top: 0;
+  margin-bottom: 44px;
+  font-family: syne;
+  font-size: 64px;
+  color: #fff;
+}
+
+.sertifications__images {
+  display: flex;
+  justify-content: center;
+}
+
+.sertifications__img {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-shrink: 0;
+  object-fit: contain;
+  justify-content: center;
+}
+
+
 /* MEDIA */
 @media only screen and (min-width: 1200px) {
   .hero {
@@ -596,12 +626,20 @@ img {
   .project__card {
     margin-right: 4%;
   }
+
+  .sertifications__heading {
+    font-size: 58px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   .hero__img {
     width: 400px;
     height: 450px;
+  }
+
+  .project {
+    padding-bottom: 30px;
   }
 
   .project__about {
@@ -619,6 +657,16 @@ img {
 
   .project__card-heading {
     margin-bottom: 26px;
+  }
+
+  /* SERTIFICATIONS */
+  .sertifications__heading {
+    font-size: 40px;
+  }
+
+  .sertifications__img {
+    width: 600px;
+    height: auto;
   }
 }
 
@@ -757,13 +805,24 @@ img {
   .project__card-heading {
     margin-bottom: 18px;
   }
+
+  .sertifications__heading {
+    margin-bottom: 25px;
+    font-size: 36px;
+  }
+
+  .sertifications__img {
+    width: 500px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .navbar__list {
     padding-left: 40%;
   }
+
   .project {
+    padding-bottom: 52px;
     background-position: 66px -74px;
   }
   .project__about {
@@ -779,6 +838,16 @@ img {
     font-size: 16px;
     margin-bottom: 4px;
   }
+
+  /* SERTIFICATS-SECTION */
+  .sertifications__heading {
+    font-size: 30px;
+  }
+
+  .sertifications__img {
+    width: 420px;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -838,6 +907,10 @@ img {
   .project__heading {
     font-family: "Outfit";
   }
+
+  .sertifications__img {
+    width: 370px;
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -868,6 +941,14 @@ img {
 
   .project__card-definition-description {
     font-size: 12px;
+  }
+
+  .sertifications__heading {
+    font-size: 26px;
+  }
+
+  .sertifications__img {
+    width: 300px;
   }
 
 }
