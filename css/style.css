@@ -562,6 +562,51 @@ img {
 }
 
 
+/* SKILL */
+.skill {
+  padding-top: 0;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.skill__heading {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+
+.skill__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-right: -20px;
+  padding: 0;
+  list-style: none;
+}
+
+.skill__item {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid var(--text-color);
+}
+
+.skill__img {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+
 /* SERTIFICATIONS */
 .sertifications {
   margin-bottom: 100px;
@@ -872,6 +917,10 @@ img {
     margin-bottom: 4px;
   }
 
+  .skill__heading {
+    font-size: 38px;
+  }
+
   /* SERTIFICATS-SECTION */
   .sertifications__heading {
     font-size: 30px;
@@ -1005,6 +1054,10 @@ img {
 
   .project__card-definition-description {
     font-size: 12px;
+  }
+
+  .skill__heading {
+    font-size: 28px;
   }
 
   .sertifications__heading {
